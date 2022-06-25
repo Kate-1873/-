@@ -1,0 +1,149 @@
+.c{
+    display: grid;
+    margin: 0;
+    background: radial-gradient(#BFD6E2 1px, rgba(255,255,255,0) 2px);
+    background-size: 10px 10px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 75px 1720px 75px;
+    grid-gap: 8px;
+    grid-template-areas: "h h h h h h h h h h h h" 
+                        "m m c c c c c c c c c c" 
+                        "f f f f f f f f f f f f";
+}
+
+.menu a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:rgb(77, 77, 77);
+    display: block;
+    background-color: rgb(233, 235, 227);
+}
+
+button {
+    grid-area: h;
+    color: #003559;
+    background-color:#ffd6c5;
+    align-items: flex-start;
+    width: 100px;
+    height: 40px;
+    transition: all 0.8 ease 0s;
+    font-weight: normal;
+    font-size: 15px;
+    font-family: 'Arial', serif;
+}
+
+.modal-animation {     animation-name: animatetop;
+    animation-duration: 0.8s
+}
+
+
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: #0035595d;
+    overflow:hidden;
+    position:fixed;
+    top:0px;
+}
+
+.b-popup .b-popup-content{
+    margin:40px auto 0px auto;
+    width:160px;
+    height: 140px;
+    padding:10px;
+    background-color: #ffe6dd;
+    border-radius:3px;
+    color: #003559;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 10px #003559;
+}
+
+@keyframes animatetop {
+    from {top: 0px; opacity:0}
+    to {top: 200px; opacity:1}
+}
+
+.d {
+    font-size: xx-large;
+    font-family: Arial;
+}
+
+.g {
+    width: 300px;
+    padding-left: 10%;
+}
+
+.h{
+    grid-area: h;
+    background-color: #e7b29c;
+    color: #003559;
+    padding: 17px;
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.ch {
+    grid-area: f;
+    text-align: left;
+    padding: 3px 30px;
+    background-color: #e7b29c;
+    color: #003559;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    color: #003559;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+article {
+    padding: 10px;
+    margin: 10px;
+    background:  rgb(233, 235, 227);
+    color: #003559;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+article {
+    flex: 1;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: space-between;
+}
+
+.submenu {
+    backface-visibility: hidden;
+    background: rgba(255,255,255,.8);
+}
+
+.submenu li a:hover { color: #E6855F; }
+
+  
+.submenu li a {
+    color:#003559;
+    height: 25px;
+    font-weight: normal;
+    padding: 10px 25px;
+    font-family: 'Arial', serif;
+}
+
+div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
